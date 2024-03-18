@@ -1,0 +1,74 @@
+.container{
+    width:100%;
+    background-color:#F9F9F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:700px;
+
+}
+
+.container .imgcol{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.container .imgcol img.foodtwo{
+    padding-top: 30px;
+}
+.container .rightside{
+    margin-left: 20px;
+    width:550px;
+    height:500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    
+}
+.container .rightside .title{
+    width:80%;
+    height:200px;
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+
+}
+.container .rightside .title p.tit{
+    display: flex;
+    font-size: 40px;
+    width:80%;
+    padding-right: 60px;
+    font-weight: 500;
+    word-spacing: 3px;
+    text-align: start;
+    padding-bottom: 10px;
+}
+.container .rightside .title p.para{
+    width:400px;
+    align-items: start;
+    text-align: start;
+
+
+}
+.container .rightside .icon_container{
+    margin-top: 50px;
+    width: 100%;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .rightside .icon{
+    display: flex;
+ 
+}
+.container .rightside .icon_container img{
+       height:25px; 
+}
+.container .rightside .icon p{
+    padding-left: 10px;
+    font-weight: 500;
+}

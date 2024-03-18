@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width:100%;
+    height:550px;
+    background-color:#474747;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:350px;
+    height:250px;
+}
+.parent .icon{
+    display: flex;
+}
+.parent .icon p{
+    margin: 0px 10px;
+}
+.parent .contact h3,
+.parent .contact .social{
+    display: flex;
+    width:100%;
+}
+.parent .contact img{
+    width:250px;
+
+}
+.parent .contact p{
+    text-align: start;
+    color:#ADB29E;
+
+}
+.parent .contact .icon img{
+    width:30px;
+    height:30px;
+    border-radius: 20px;
+}
+.parent .contact .social img{
+    width:30px;
+    height:30px;
+    margin:0px 3px;
+}
+
+.parent .links {
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height:250px;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.parent h3{
+    width:100%;
+    display: flex;
+    font-size: 18px;
+
+}
+.parent  a{
+    text-decoration: none;
+    color: #DBDFD0;
+    display: flex;
+    justify-content: flex-start;
+}
+.parent  a:hover{
+    color:white;
+}
+
+.parent .acc{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height:250px;
+    justify-content: space-around;
+    /* background-color: gold; */
+}
+.parent .rightside{
+    /* background-color: aqua; */
+    margin-top: 100px;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.parent .rightside img{
+    width:150px;
+    height:150px;
+}
+.parent .rightside .row_one,
+.parent .rightside .row_two{
+    width:310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:1100px)and (max-width:1270px){
+    .parent .contact{
+        width:300px;
+    }
+    .parent .links {
+        width:200px;
+    }
+    .parent .acc{
+        width:200px;
+    }
+    .parent .sub{
+        width:350px;
+        display: flex;
+        height:320px;
+        justify-content: space-between;
+    }
+    .parent .sub .row button{
+        position: relative;
+        left:125px;
+        bottom: 47px;
+    }
+
+}
+@media(min-width:980px)and (max-width:1099px){
+    .parent .contact{
+        width:250px;
+    }
+    .parent .links {
+        width:200px;
+    }
+    .parent .acc{
+        width:200px;
+    }
+    .parent .sub{
+        width:300px;
+        display: flex;
+        height:320px;
+        justify-content: space-between;
+    }
+    .parent .sub .row input{
+        width:250px;
+    }
+    .parent .sub .row button{
+        position: relative;
+        left:100px;
+        bottom: 47px;
+    }
+
+}
+@media(min-width:700px)and (max-width:979px){
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+        height: 780px;
+    }
+    .parent .contact{
+        width:45%;
+    }
+    .parent .links {
+        width:45%;
+    }
+    .parent .acc{
+        width:30%;
+    }
+    .parent .sub{
+        width:60%;
+        display: flex;
+        height:320px;
+        justify-content: space-between;
+    }
+    .parent .sub .row input{
+        width:300px;
+    }
+}
+@media(min-width:600px)and (max-width:699px){
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+        height: 780px;
+    }
+    .parent .contact{
+        width:45%;
+    }
+    .parent .links {
+        width:30%;
+    }
+    .parent .acc{
+        width:20%;
+    }
+    .parent .sub{
+        width:80%;
+        display: flex;
+        height:320px;
+        justify-content: space-between;
+    }
+    .parent .sub .row input{
+        width:300px;
+    }
+    
+}
+@media(min-width:400px)and (max-width:599px){
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+        height: 850px;
+        font-size: 14px;
+    }
+    .parent .contact{
+        width:65%;
+    }
+    .parent .links {
+        width:25%;
+    }
+    .parent .acc{
+        width:40%;
+    }
+    .parent .sub{
+        width:95%;
+        display: flex;
+        height:320px;
+        justify-content: space-between;
+}
+    .parent .sub .row input{
+        width:250px;
+    }
+}
+
+
+
+

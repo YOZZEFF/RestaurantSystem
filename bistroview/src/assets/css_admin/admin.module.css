@@ -1,0 +1,55 @@
+.parent {
+    /* background-color: deeppink; */
+    height:650px;
+    width:100%;
+    padding-top: 150px;
+}
+.parent .admin_name {
+    display: flex;
+    width:90%;
+    height:50px;
+    margin: auto;
+    justify-content:start;
+    align-items: start;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.parent .cards {
+    display: flex;
+    width:90%;
+    height:400px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.parent .cards  a{
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+}
+.parent .cards .card_one,
+.card_two,
+.card_three
+{
+    padding: 15px;
+    border-radius: 15px;
+    width:80%;
+    
+}
+.parent .cards .card_one{
+    background-color:#00cc66 ;
+}
+.parent .cards .card_two{
+    background-color:#ff0066 ;
+}
+.parent .cards .card_three{
+    background-color:#33ffff ;
+}
+.parent .cards .card_one:hover{
+    background-color:#0e9a54 ;
+}
+.parent .cards .card_two:hover{
+    background-color:#b40f51 ;
+}
+.parent .cards .card_three:hover{
+    background-color:#1fb3b3 ;
+}

@@ -1,0 +1,138 @@
+.head{
+    width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+}
+.head h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.head a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #AD343E;
+    padding: 15px;
+    border-radius: 30px;
+
+}
+
+.parent{
+    width:100%;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .main{
+    width:500px;
+    height:570px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: start;
+    background-color:  #F9F9F7;
+    border-radius: 10px;
+
+}
+.parent .main .date{
+    padding-left: 20px;
+    color:#737865;
+}
+
+.parent .main .title{
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.parent .main .desc{
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+.parent .col_one{
+    width:300px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.parent .col_one  .card img,
+.parent .col_two  .card img{
+    width:280px;
+    height:150px;
+}
+.parent .col_one  .card{
+    width:280px;
+    height:240px;
+    background-color: #F9F9F7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.parent .col_one .card .date{
+    padding-left: 20px;
+    height:20px;
+
+    color:#737865;
+    text-align: start;
+}
+
+.parent .col_one .card .title{
+    font-weight: 500;
+    padding-left: 20px;
+    text-align: start;
+
+}
+
+.parent .col_two{
+    width:300px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.parent .col_two  .card{
+    width:280px;
+    height:240px;
+    background-color: #F9F9F7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.parent .col_two .card .date{
+    padding-left: 20px;
+    color:#737865;
+    height:20px;
+    text-align: start;
+}
+
+.parent .col_two .card .title{
+    font-weight: 500;
+    padding-left: 20px;
+    text-align: start;
+
+}
+

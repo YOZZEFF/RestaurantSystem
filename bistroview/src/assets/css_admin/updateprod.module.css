@@ -1,0 +1,113 @@
+.parent{
+    padding-top: 160px;
+    height:110vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.parent .head{
+    font-size: 34px;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.parent .notf{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:30px ;
+    font-size: 20px;
+    color: #AD343E;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width:750px;
+    height:550px;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 12px 14px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 14px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 12px 14px -9px rgba(0,0,0,0.75);
+}
+form  .danger{
+    color: #AD343E;
+    font-weight: 600;
+
+}
+
+form .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    font-weight: 600;
+}
+form .col input{
+    width:330px;
+    height:45px;
+    border: 2px solid #DBDFD0;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 15px;
+}
+form .col input:focus input{
+
+    border-style: none;
+}
+form .row_one{
+    width:700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .row_three,
+form .row_two{
+    width:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    font-weight: 600;   
+}
+form .row_two input{
+    width:700px;
+    height:45px;
+    border: 2px solid #DBDFD0;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+}
+form .row_three textarea{
+    width:700px;
+    height:130px;
+    border: 2px solid #DBDFD0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 15px;
+
+}
+form button{
+    width:700px;
+    height:50px;
+    background-color: #AD343E;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

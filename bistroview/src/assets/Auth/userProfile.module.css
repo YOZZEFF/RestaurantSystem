@@ -1,0 +1,102 @@
+.parent {
+    width: 100%;
+    height: 140vh;
+    padding-top: 120px;
+}
+
+.parent .head {
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+}
+.parent .head .user_name{
+    font-family: 'Times New Roman', Times, serif;
+}
+.parent .head .user_name span{
+    color: #AD343E;
+}
+
+
+.parent .bookings{
+    width:100%;
+    height:400px;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent .bookings .title{
+   
+    width:70%;
+    position: relative;
+    bottom: 80px;
+    right:50px ;
+    height: 50px;
+    font-size: 30px;
+    /* background-color: #AD343E; */
+}
+.parent .bookings  .booking_container{
+    display: flex;
+    width:90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+
+.parent .info_container{
+    width:100%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.parent .info_container span.succ{
+    color: #AD343E;
+    font-weight: 500;
+}
+.parent .info_container .title{
+        width:70%;
+        position: relative;
+        bottom: 50px;
+        right:50px ;
+        height: 50px;
+        font-size: 30px;
+
+}
+.parent .info_container .formm form{
+    height: 350px;
+    background-color: transparent;
+    width:550px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.parent .info_container .formm form label{
+    font-weight: 500;
+}
+.parent .info_container .formm form input{
+    width:500px;
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 7px;
+
+}
+.parent .info_container .formm form button{
+    width:500px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

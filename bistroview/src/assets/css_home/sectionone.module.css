@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    padding-top: 100px;
+    
+}
+.container #one{
+    width:100%;
+    height: 750px;
+}
+.container .parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: aqua; */
+    position: absolute;
+    top:250px;
+    width:100%;
+    height:420px;
+}
+.container .parent #two{
+    width:550px;
+    height:350px;
+}
+.container .parent .links{
+    width:320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .parent .links a{
+    text-decoration: none;
+    width:150px;
+    padding: 15px 23px;
+}
+.container .parent .links .book{
+    color:white;
+    background-color: #AD343E;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.container .parent .links .explore{
+    color:#2C2F24 ;
+    background-color:transparent ;
+    border:2px solid #2C2F24;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.container .parent .links .book:hover{
+    color: #AD343E;
+    background-color: white;
+    border-radius: 30px;
+    border:2px solid #AD343E;
+
+}   
+.container .parent .links .explore:hover{
+    color:white ;
+    background-color:#2C2F24 ;
+    border:2px solid #2C2F24;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+
+

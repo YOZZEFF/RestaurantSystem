@@ -1,0 +1,88 @@
+.parent{
+    width:100%;
+    height:100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F7;
+}
+.parent .title_head{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px ;
+}
+
+.container{
+    width:650px;
+    height:600px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent form{
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    height:550px;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 12px 14px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 14px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 12px 14px -9px rgba(0,0,0,0.75);
+}
+
+form .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    font-weight: 600;
+
+}
+
+form .col input:focus input{
+    border-style: none;
+}
+
+
+form .row_three{
+    width:500px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    font-weight: 600;
+}
+form .row_three .danger{
+    color: #AD343E;
+}
+form .row_three input{
+    width:500px;
+    height:45px;
+    border: 2px solid #DBDFD0;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+}
+.parent form  button{
+    width:500px;
+    height:50px;
+    background-color: #AD343E;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
