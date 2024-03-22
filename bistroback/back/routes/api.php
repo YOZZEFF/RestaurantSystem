@@ -9,6 +9,8 @@ use App\Http\Controllers\DisplayblogController;
 use App\Http\Controllers\InfoUserUpdateController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\AdminController;
+use App\Http\Middleware\VerifyToken;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,15 +22,16 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 // Auth
 Route::post('login', [AuthController::class, 'login']);
 Route::post('register', [AuthController::class, 'register']);
 Route::get('users', [AuthController::class, 'getusers']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
+
 // menu
 Route::get('menu/all/{id}', [MenuController::class, 'get_Cateogries_products']);
 Route::get('menu/allprod', [MenuController::class, 'get_all_menu']);
@@ -36,6 +39,8 @@ Route::get('menu/allprod', [MenuController::class, 'get_all_menu']);
 Route::get('menu/all/{id}/{product_id}', [MenuController::class, 'get_product_of_menu_cateogry']);
 // get single product of all button  (random cateogries)
 Route::get('menu/allprod/{id}', [MenuController::class, 'get_product_of_menu_all']);
+});
+
 
 // Blogs
 Route::get('pages', [DisplayblogController::class, 'get_blogs']);
@@ -51,12 +56,9 @@ Route::get('admin/users', [AdminController::class, 'get_users']);
 Route::get('admin/resrvations', [AdminController::class, 'get_resrvations']);
 Route::post('admin/resrvations_validation/{id}', [AdminController::class, 'resrvation_validation']);
 // CRUD operations
-Route::get('admin/products', [AdminController::class, 'get_all_products']);
+Route::get('admin/products', [AdminController::class, 'get_all_products'])->name('prod');
 Route::get('admin/products/{id}', [AdminController::class, 'get_data_of_single_product']);
 Route::post('admin/addproduct/', [AdminController::class, 'add_product']);
 Route::put('admin/updateproduct/{id}', [AdminController::class, 'update_product']);
 Route::post('admin/deleteproduct/{id}', [AdminController::class, 'delete_product']);
-// End Admin zone
-
-
-});
+    // End Admin zone
