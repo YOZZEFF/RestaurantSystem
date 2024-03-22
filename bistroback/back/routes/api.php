@@ -28,7 +28,7 @@ Route::post('login', [AuthController::class, 'login']);
 Route::post('register', [AuthController::class, 'register']);
 Route::get('users', [AuthController::class, 'getusers']);
 Route::middleware(['auth:sanctum'])->group(function () {
-    // menu
+// menu
 Route::get('menu/all/{id}', [MenuController::class, 'get_Cateogries_products']);
 Route::get('menu/allprod', [MenuController::class, 'get_all_menu']);
 // get single product of cateogries
