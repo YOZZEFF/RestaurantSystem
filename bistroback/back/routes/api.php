@@ -27,8 +27,8 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 Route::post('login', [AuthController::class, 'login']);
 Route::post('register', [AuthController::class, 'register']);
 Route::get('users', [AuthController::class, 'getusers']);
-
-// menu
+Route::middleware(['auth:sanctum'])->group(function () {
+    // menu
 Route::get('menu/all/{id}', [MenuController::class, 'get_Cateogries_products']);
 Route::get('menu/allprod', [MenuController::class, 'get_all_menu']);
 // get single product of cateogries
@@ -56,3 +56,6 @@ Route::post('admin/addproduct/', [AdminController::class, 'add_product']);
 Route::put('admin/updateproduct/{id}', [AdminController::class, 'update_product']);
 Route::post('admin/deleteproduct/{id}', [AdminController::class, 'delete_product']);
 // End Admin zone
+
+
+});
