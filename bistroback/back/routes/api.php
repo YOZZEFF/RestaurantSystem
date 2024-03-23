@@ -30,7 +30,7 @@ Route::post('login', [AuthController::class, 'login']);
 Route::post('register', [AuthController::class, 'register']);
 Route::get('users', [AuthController::class, 'getusers']);
 
-Route::middleware(['auth:sanctum'])->group(function () {
+// Route::middleware(['auth:sanctum'])->group(function () {
 
 // menu
 Route::get('menu/all/{id}', [MenuController::class, 'get_Cateogries_products']);
@@ -39,7 +39,7 @@ Route::get('menu/allprod', [MenuController::class, 'get_all_menu']);
 Route::get('menu/all/{id}/{product_id}', [MenuController::class, 'get_product_of_menu_cateogry']);
 // get single product of all button  (random cateogries)
 Route::get('menu/allprod/{id}', [MenuController::class, 'get_product_of_menu_all']);
-});
+// });
 
 
 // Blogs

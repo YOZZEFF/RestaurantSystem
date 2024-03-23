@@ -16,14 +16,21 @@ class AuthController extends Controller
 
     public function login(LoginRequest $request)
     {
-        $token = auth()->attempt($request->validated());
-        if ($token) {
-            return $this->responseWithToken($token, auth()->user());
-        } else {
+        $user_validation = auth()->attempt($request->validated());
+        if (!$user_validation) {
             return response()->json([
                 'status' => 'failed'
-            ] );
+            ]);
         }
+
+        $user = Auth::user();
+        $token = $user->createToken('token')->plainTextToken;
+        $cookie = cookie('jwt', $token, 60 * 24); // 1 day
+
+        return response([
+            'access_token' => $token,
+            'user' => $user
+        ])->withCookie($cookie);
     }
 
     public function register(RegistrationRequest $request)
@@ -33,8 +40,9 @@ class AuthController extends Controller
         $user = User::create($request->validated());
 
         if ($user) {
-            $token = auth()->login($user);
-            return $this->responseWithToken($token, $user);
+            return response()->json([
+                'user' => $user,
+            ]);
         } else {
 
             return response()->jason([
@@ -52,14 +60,5 @@ class AuthController extends Controller
         ];
 
         return $context;
-    }
-    public function responseWithToken($token, $user)
-    {
-        return response()->json([
-            'user' => $user,
-            'access_token' => $token,
-            'type' => 'bearer'
-        ]);
-
     }
 }
