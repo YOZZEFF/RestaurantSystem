@@ -22,12 +22,12 @@
     padding-top: 100px;
     z-index: 99;
 }
-form{
+.parent .container form{
     display: flex;
     flex-direction: column;
     width:750px;
     height:400px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
@@ -37,6 +37,12 @@ form{
 }
 form  .danger{
     color: #AD343E;
+    font-weight: 600;
+    font-size: 18px;
+}
+form  .succ{
+    color:green;
+    font-size: 18px;
     font-weight: 600;
 
 }

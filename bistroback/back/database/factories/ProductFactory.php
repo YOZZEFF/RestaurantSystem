@@ -26,8 +26,8 @@ class ProductFactory extends Factory
             'image' => $this->faker->imageUrl(306, 230),
             'description' => $this->faker->text(70),
             'price' => $this->faker->randomFloat(2, 10, 100),
-            'category_id' =>$this->faker->numberBetween(4, 5),
-            'user_id' =>$this->faker->numberBetween(1, 10),
+            'category_id' =>$this->faker->numberBetween(1, 4),
+            'user_id' =>$this->faker->numberBetween(1, 8),
         ];
     }
 }

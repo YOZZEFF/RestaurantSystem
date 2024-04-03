@@ -19,11 +19,11 @@ class BlogFactory extends Factory
         $faker = \Faker\Factory::create();
 
         return [
-            //
+
             'title' => $faker->dateTime()->format('d-m-Y H:i:s'),
             'image' => $faker->imageUrl(306, 230),
             'description' => $faker->text(40),
-            'user_id' => $faker->numberBetween(1, 10)
+            'user_id' => $faker->numberBetween(2,4 )
 
         ];
     }

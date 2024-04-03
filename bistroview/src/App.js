@@ -19,8 +19,10 @@ import { Getbookings } from './Admin/Getbookings';
 import { Products } from './Admin/Products';
 import { Updateprod } from './Admin/Updateprod';
 import { Addprod } from './Admin/Addprod';
+import { useSelector } from 'react-redux';
 
 function App() {
+
   return (
     <div className="App">
       <Nav/>

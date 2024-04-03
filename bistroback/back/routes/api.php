@@ -30,7 +30,8 @@ Route::post('login', [AuthController::class, 'login']);
 Route::post('register', [AuthController::class, 'register']);
 Route::get('users', [AuthController::class, 'getusers']);
 
-// Route::middleware(['auth:sanctum'])->group(function () {
+
+
 
 // menu
 Route::get('menu/all/{id}', [MenuController::class, 'get_Cateogries_products']);
@@ -39,17 +40,19 @@ Route::get('menu/allprod', [MenuController::class, 'get_all_menu']);
 Route::get('menu/all/{id}/{product_id}', [MenuController::class, 'get_product_of_menu_cateogry']);
 // get single product of all button  (random cateogries)
 Route::get('menu/allprod/{id}', [MenuController::class, 'get_product_of_menu_all']);
-// });
-
-
 // Blogs
 Route::get('pages', [DisplayblogController::class, 'get_blogs']);
+
+// store contacts data
+Route::post('contact', [Contact_usController::class, 'store_contact_us_data']);
+
+Route::middleware(['auth:sanctum'])->group(function () {
+
 //  store booking
 Route::post('booking', [UserBookingController::class, 'store_reservation']);
 // display  reservations of user
 Route::get('/get_reservations/{id}', [UserBookingController::class, 'get_user_reservations']);
-// store contacts data
-Route::post('contact', [Contact_usController::class, 'store_contact_us_data']);
+
 Route::post('info_update/{id}', [InfoUserUpdateController::class, 'user_info_updating']);
 //Start  Admin zone
 Route::get('admin/users', [AdminController::class, 'get_users']);
@@ -62,3 +65,4 @@ Route::post('admin/addproduct/', [AdminController::class, 'add_product']);
 Route::put('admin/updateproduct/{id}', [AdminController::class, 'update_product']);
 Route::post('admin/deleteproduct/{id}', [AdminController::class, 'delete_product']);
     // End Admin zone
+});

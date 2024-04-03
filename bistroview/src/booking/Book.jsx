@@ -10,6 +10,7 @@ export const Book = () => {
   const[phone,setPhone]=useState("");
   const[user_id,setUser_id]=useState("");
   const[errors,setErrors]=useState([]);
+  const[success,setSuccess]=useState([]);
   const[totperson,setTotperson]=useState("");
   
   const user =JSON.parse(localStorage.getItem('user')) ;
@@ -29,6 +30,8 @@ export const Book = () => {
        totperson,
        user_id: user.id  
       });
+      setSuccess({success : ['Reservation of table  done']});
+
 
       setDate("");
       setTime("");
@@ -43,7 +46,6 @@ export const Book = () => {
         setErrors({ book: ['All fields are Required'] });
     }
   }
-    
   }
 
 
@@ -54,6 +56,7 @@ export const Book = () => {
       <div className={secone.container}>
       <form onSubmit={handlebook}>
       {errors.book && <span className={secone.danger}>{errors.book[0]}</span>}
+      {success.success && <span className={secone.succ}>{success.success[0]}</span>}
 
         <div className={secone.row_one}>
 
